@@ -38,11 +38,13 @@ def main():
     
     _, mac = sys.argv
     
+    mac = mac.strip()
+    
     if not is_valid_mac(mac):
         print("MAC inválido.")
         return
     
-    print(format_mac(mac))
+    print("display location", format_mac(mac))
 
 
 if __name__ == "__main__":
